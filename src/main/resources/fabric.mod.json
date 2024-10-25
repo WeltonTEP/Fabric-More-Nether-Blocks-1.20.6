@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "morenetherblocks",
+	"version": "${version}",
+	"name": "More Nether Blocks",
+	"description": "This mod will add new blocks found in The Nether as well as revamp ore generation in The Nether.",
+	"authors": [
+		"WeltonTEP"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/morenetherblocks/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.weltontep.morenetherblocks.MoreNetherBlocks"
+		],
+		"client": [
+			"net.weltontep.morenetherblocks.MoreNetherBlocksClient"
+		],
+		"fabric-datagen": [
+			"net.weltontep.morenetherblocks.MoreNetherBlocksDataGenerator"
+		]
+	},
+	"mixins": [
+		"morenetherblocks.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
